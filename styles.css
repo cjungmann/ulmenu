@@ -1,0 +1,46 @@
+html { background-color:#9999FF; }
+body { background-color:#FFFFFF; width:800px; margin:1em auto; }
+h1   { font-family:sans-serif; text-align:center; background-color:#99FFCC }
+
+
+/* Mobile detector */
+.mobile_test { background-color:red; }
+@media (hover:none), (pointer:coarse)
+{
+    .mobile_test { background-color:yellow; }
+}
+
+
+/* Start of ul.menu styles */
+
+nav ul       { padding:0; margin:0; list-style-type:none; }
+nav li       { display:inline-block; cursor:pointer; white-space:nowrap; }
+nav a        { text-decoration:none; color: #000000;}
+
+nav ul.menu                         { background-color:#EEEEEE; text-align:left; }
+
+nav ul.menu li:hover                { background-color:#FFFF66; }
+
+nav ul.menu li *                    { display:block; }
+nav ul.menu li a,
+nav ul.menu li div                  { padding:.1em .75em; }
+
+/* drop-down part */
+
+nav ul.menu li.topic                { position:relative; }
+nav ul.menu li.topic       .menu    { display:none; position:absolute; left:0; }
+nav ul.menu li.topic:hover .menu    { display:block; }
+
+/* drop-down drop shadow */
+nav ul.menu li.topic .menu li.mitem { border-right :8px solid #AAAAAA; }    
+nav ul.menu li.topic .menu          { border-bottom:8px solid #AAAAAA; }
+
+
+
+
+
+
+/* Adjustments to defaults to improve look */
+h1  { margin:0; }   /* abut menu to header */
+
+
